@@ -1,5 +1,5 @@
-torch==2.5.1
-torchvision==0.20.1
+torch==2.9.0
+torchvision==0.24.0
 ultralytics>=8.2.0
 streamlit>=1.37
 opencv-python-headless>=4.10
