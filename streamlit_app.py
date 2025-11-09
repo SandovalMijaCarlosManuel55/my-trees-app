@@ -6,6 +6,18 @@ from PIL import Image, ImageDraw
 import streamlit as st
 import torch
 
+import streamlit as st
+try:
+    import cv2, ultralytics, torch, torchvision, numpy as np
+    st.sidebar.write({"cv2": cv2.__version__,
+                      "ultralytics": ultralytics.__version__,
+                      "torch": torch.__version__,
+                      "torchvision": torchvision.__version__,
+                      "numpy": np.__version__})
+except Exception as e:
+    st.sidebar.error(f"import error: {e!r}")
+
+
 st.set_page_config(page_title="Tree Detector - YOLOv8n & Faster R-CNN", layout="wide")
 
 # ------------------- Rutas y config -------------------
