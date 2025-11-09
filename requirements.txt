@@ -1,0 +1,9 @@
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.3.0+cpu
+torchvision==0.18.0+cpu
+--extra-index-url https://pypi.org/simple
+ultralytics>=8.2.0
+streamlit>=1.37
+opencv-python-headless>=4.10
+pillow
+numpy
